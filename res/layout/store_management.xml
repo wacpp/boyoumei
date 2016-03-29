@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/register_first_step_btn_nextstep_height"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="店铺管理"
+            android:textColor="@color/black"
+            android:textSize="@dimen/login_btn_tv_login_textsize" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/store_managerment_rl_margin_top"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="230dp" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="230dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" >
+
+                <Button
+                    android:id="@+id/btn_store_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/store_managerment_btn_serve_info_height"
+                    android:layout_marginLeft="@dimen/store_managerment_btn_store_info_margin_left"
+                    android:drawableTop="@drawable/store_info"
+                    android:paddingTop="25dp"
+                    android:text="店铺信息" />
+
+                <Button
+                    android:id="@+id/btn_serve_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/store_managerment_btn_serve_info_height"
+                    android:layout_below="@+id/btn_store_info"
+                    android:layout_marginLeft="@dimen/store_managerment_btn_store_info_margin_left"
+                    android:layout_marginTop="15dp"
+                    android:drawableTop="@drawable/service_info"
+                    android:paddingTop="25dp"
+                    android:text="服务信息" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="230dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" >
+
+                <Button
+                    android:id="@+id/btn_order_mana"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/store_managerment_btn_serve_info_height"
+                    android:layout_marginLeft="@dimen/store_managerment_btn_order_mana_margin_left"
+                    android:drawableTop="@drawable/order_info"
+                    android:paddingTop="25dp"
+                    android:text="订单管理" />
+
+                <Button
+                    android:id="@+id/btn_setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/store_managerment_btn_setting_height"
+                    android:layout_below="@+id/btn_order_mana"
+                    android:layout_marginLeft="@dimen/store_managerment_btn_setting_margin_left"
+                    android:layout_marginTop="15dp"
+                    android:drawableTop="@drawable/login_out"
+                    android:paddingTop="25dp"
+                    android:text="注销账户" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/register_first_step_btn_nextstep_height"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/btn_ret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="登录"
+            android:textColor="@color/black"
+            android:textSize="@dimen/login_btn_tv_login_textsize" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/login_iv_logo_margin_top"
+        android:src="@drawable/ic_launcher" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/register_first_step_btn_nextstep_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/login_et_username_magin_left"
+        android:layout_marginRight="@dimen/login_et_username_magin_left"
+        android:layout_marginTop="@dimen/login_et_username_magin_top"
+        android:background="#eeeeee"
+        android:hint="用户名"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textColorHint="#888888" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/register_first_step_btn_nextstep_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/login_et_username_magin_left"
+        android:layout_marginRight="@dimen/login_et_username_magin_left"
+        android:layout_marginTop="@dimen/login_et_password_magin_top"
+        android:background="#eeeeee"
+        android:hint="密码"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:textColorHint="#888888" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/register_first_step_btn_nextstep_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/login_et_username_magin_left"
+        android:layout_marginRight="@dimen/login_et_username_magin_left"
+        android:layout_marginTop="@dimen/login_btn_login_margin_top"
+        android:background="@color/button_select"
+        android:text="登录"
+        android:textColor="@color/white" >
+    </Button>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/login_btn_register_margin_top"
+        android:background="@android:color/transparent"
+        android:text="注册"
+        android:textColor="@color/black" >
+    </Button>
+
+</LinearLayout>

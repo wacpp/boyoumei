@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/register_first_step_btn_nextstep_height"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/btn_ret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tv_finished_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注册成功"
+            android:textColor="@color/black"
+            android:textSize="@dimen/register_finish_step_tv_confim_textsize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="fill_parent"
+            android:layout_height="185dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="@dimen/register_finish_step_rl_margin_top"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:padding="0dp"
+            android:visibility="invisible" >
+
+            <TextView
+                android:id="@+id/tv_suc_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/register_finish_step_tv_suc_info_top"
+                android:text="恭喜！注册帐号成功!"
+                android:textColor="#333333"
+                android:textSize="18sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_suc_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_suc_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="审核中"
+                android:textColor="#ff6600"
+                android:textSize="30sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_suc_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_suc_2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="当前状态"
+                android:textColor="#888888"
+                android:textSize="18sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_suc_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_suc_3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:maxLines="1"
+                android:text="我们会在2个工作日内审核您的资料。"
+                android:textColor="#333333"
+                android:textSize="16sp" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="fill_parent"
+            android:layout_height="185dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="@dimen/register_finish_step_rl_margin_top"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:padding="0dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_suc2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/register_finish_step_tv_suc_info_top"
+                android:text="恭喜！注册账号成功!"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:visibility="invisible" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_suc2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_suc2_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="审核通过"
+                android:textColor="#ff6600"
+                android:textSize="30sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_suc2_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_suc2_2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="当前状态"
+                android:textColor="#888888"
+                android:textSize="18sp"
+                android:visibility="invisible" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_suc2_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_suc2_3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:maxLines="1"
+                android:text="我们会在2个工作日内审核您的资料。"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:visibility="invisible" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl3"
+            android:layout_width="fill_parent"
+            android:layout_height="185dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="@dimen/register_finish_step_rl_margin_top"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:padding="0dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_suc3_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/register_finish_step_tv_suc_info_top"
+                android:text="抱歉注册信息有误"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:visibility="visible" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_suc3_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_suc3_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="审核未通过"
+                android:textColor="#ff6600"
+                android:textSize="30sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_suc3_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_suc3_2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="当前状态"
+                android:textColor="#888888"
+                android:textSize="18sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_suc3_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_suc3_3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:maxLines="1"
+                android:text="我们会在2个工作日内审核您的资料。"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:visibility="invisible" >
+            </TextView>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_setshop_info"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/register_first_step_btn_nextstep_height"
+            android:layout_below="@+id/rl1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/register_first_step_btn_nextstep_margin_left"
+            android:layout_marginRight="@dimen/register_second_step_et_shop_name_left"
+            android:layout_marginTop="@dimen/register_first_step_btn_nextstep_margin_top"
+            android:background="@color/button_select"
+            android:text="管理店铺"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/register_second_step_tv_info_textsize" >
+        </Button>
+    </RelativeLayout>
+
+</LinearLayout>

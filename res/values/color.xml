@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="txt_color">#728391</color>
+    <color name="txt_color_hl">#ccced0</color>
+    <color name="retryc">#ffffff</color>
+    <color name="retry">#9ca7b0</color>
+    <color name="about_device_color">#00BFFF</color>
+    <color name="about_device_color_hl">#eaf0f3</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="blue">#0000ff</color>
+    <color name="home_page_login_unfoucs">#ff3067</color>
+    <color name="home_page_login">#830031</color>
+    <color name="content_color">#eeeeee</color>
+    <color name="button_select">#ff62bf</color>
+    <color name="button_unselect">#fe67bd</color>
+    <color name="qn_dialog_bottom_bg_press_color">#b5b5b5</color>
+    <color name="qn_dialog_bottom_bg_color">#eeeeee</color>
+    <color name="qn_dialog_bottom_text_color">#000000</color>
+    <color name="qn_dialog_bottom_line_color">#D5D5D5</color>
+    <color name="custom_gray">#666666</color>
+
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/register_first_step_btn_nextstep_height"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/btn_ret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注册"
+            android:textColor="@color/black"
+            android:textSize="@dimen/register_first_step_tv_register_textsize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:background="@color/content_color" >
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/register_first_step_btn_nextstep_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/register_first_step_et_username_left"
+            android:layout_marginRight="@dimen/register_first_step_et_username_left"
+            android:layout_marginTop="@dimen/register_first_step_et_username_top"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/register_mail"
+            android:drawablePadding="@dimen/register_first_step_drawable_padding"
+            android:hint="请输入邮箱"
+            android:textColorHint="#888888"
+            android:paddingLeft="@dimen/register_first_step_padding" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/register_first_step_btn_nextstep_height"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/et_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/register_first_step_et_username_left"
+            android:layout_marginRight="@dimen/register_first_step_et_username_left"
+            android:layout_marginTop="@dimen/register_first_step_et_password_top"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/register_password"
+            android:drawablePadding="@dimen/register_first_step_drawable_padding"
+            android:hint="请输入密码"
+            android:textColorHint="#888888"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/register_first_step_padding" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/et_confim"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/register_first_step_btn_nextstep_height"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/et_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/register_first_step_et_username_left"
+            android:layout_marginRight="@dimen/register_first_step_et_username_left"
+            android:layout_marginTop="@dimen/register_first_step_et_confim_top"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/register_commit"
+            android:drawablePadding="@dimen/register_first_step_drawable_padding"
+            android:hint="再次确认密码"
+            android:textColorHint="#888888"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/register_first_step_padding" >
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_nextstep"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/register_first_step_btn_nextstep_height"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/et_confim"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/register_first_step_et_username_left"
+            android:layout_marginRight="@dimen/register_first_step_et_username_left"
+            android:layout_marginTop="@dimen/register_first_step_btn_nextstep_margin_top"
+            android:background="@color/button_select"
+            android:text="下一步" >
+        </Button>
+    </RelativeLayout>
+
+</LinearLayout>

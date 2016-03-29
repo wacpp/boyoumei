@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/register_first_step_btn_nextstep_height"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/btn_ret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发布服务"
+            android:textColor="@color/black"
+            android:textSize="@dimen/register_second_step_tv_info_textsize" />
+
+        <Button
+            android:id="@+id/publish_info_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/transparent"
+            android:text="完成"
+            android:textColor="#ff0063"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/register_second_step_rl_margin_top"
+        android:background="@color/content_color" >
+
+        <EditText
+            android:id="@+id/et_publish_name"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/register_first_step_btn_nextstep_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/register_second_step_et_shop_name_left"
+            android:layout_marginRight="@dimen/register_second_step_et_shop_name_left"
+            android:layout_marginTop="@dimen/register_second_step_et_shop_name_top"
+            android:background="@color/white"
+            android:hint="服务名称"
+            android:paddingLeft="5dp"
+            android:textColorHint="#888888"
+            android:textSize="@dimen/register_second_step_tv_info_textsize" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/et_publish_info"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/register_first_step_btn_nextstep_height"
+            android:layout_below="@+id/et_publish_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/register_second_step_et_shop_name_left"
+            android:layout_marginRight="@dimen/register_second_step_et_shop_name_left"
+            android:layout_marginTop="@dimen/register_second_step_et_shop_name_top"
+            android:background="@color/white"
+            android:hint="价格"
+            android:numeric="decimal"
+            android:paddingLeft="5dp"
+            android:textColorHint="#888888"
+            android:textSize="@dimen/register_second_step_tv_info_textsize" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/et_publish_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/et_publish_info"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/register_second_step_et_shop_name_left"
+            android:layout_marginRight="@dimen/register_second_step_et_shop_name_left"
+            android:layout_marginTop="@dimen/register_second_step_et_shop_name_top"
+            android:background="@color/white"
+            android:gravity="top|left"
+            android:hint="详细介绍"
+            android:lineSpacingExtra="10dp"
+            android:lines="5"
+            android:maxLines="5"
+            android:paddingLeft="5dp"
+            android:textColorHint="#888888"
+            android:textSize="@dimen/register_second_step_tv_info_textsize" >
+        </EditText>
+
+        <RelativeLayout
+            android:id="@+id/rl_service_type"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/register_first_step_btn_nextstep_height"
+            android:layout_below="@+id/et_publish_detail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/register_second_step_et_shop_name_left"
+            android:layout_marginRight="@dimen/register_second_step_et_shop_name_left"
+            android:layout_marginTop="@dimen/register_second_step_et_shop_name_top"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/tv_service_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:gravity="left|center"
+                android:hint="服务类型"
+                android:minHeight="40dp"
+                android:paddingLeft="5dp"
+                android:textColor="#ff000000"
+                android:textColorHint="#888888"
+                android:textSize="@dimen/register_second_step_tv_info_textsize" >
+            </TextView>
+
+            <ImageButton
+                android:id="@+id/bt_service_type_show"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/xiasanjiao" />
+
+            <ImageButton
+                android:id="@+id/bt_service_type"
+                android:layout_width="20dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@android:color/transparent" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/register_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/register_second_step_sp_service_type_height"
+            android:layout_below="@+id/rl_service_type"
+            android:layout_marginLeft="@dimen/register_second_step_sp_service_type_left"
+            android:layout_marginRight="@dimen/register_second_step_et_shop_name_left"
+            android:layout_marginTop="@dimen/register_second_step_sp_service_type_top"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_publish_tag1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_publish_tag1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="left|center"
+                    android:hint="标签"
+                    android:minHeight="40dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="#ff000000"
+                    android:textColorHint="#888888"
+                    android:textSize="@dimen/register_second_step_tv_info_textsize" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/bt_publish_tag1_show"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/xiasanjiao" />
+
+                <ImageButton
+                    android:id="@+id/img_publish_tag1"
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:color/transparent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_publish_tag2"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:textColorHint="#888888"
+                android:textSize="@dimen/register_second_step_tv_info_textsize" >
+
+                <TextView
+                    android:id="@+id/tv_publish_tag2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="left|center"
+                    android:hint="标签"
+                    android:minHeight="40dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="#ff000000"
+                    android:textColorHint="#888888"
+                    android:textSize="@dimen/register_second_step_tv_info_textsize" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/bt_publish_tag2"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/xiasanjiao" />
+
+                <ImageButton
+                    android:id="@+id/img_publish_tag2"
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:color/transparent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_publish_tag3"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent" >
+
+                <Button
+                    android:id="@+id/bt_publish_add"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/add_tag_bg"
+                    android:text="添加标签"
+                    android:textColor="#888888" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/register_ll_next"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/register_second_step_sp_service_type_height"
+            android:layout_below="@+id/register_ll"
+            android:layout_marginLeft="@dimen/register_second_step_et_shop_name_left"
+            android:layout_marginRight="@dimen/register_second_step_et_shop_name_left"
+            android:layout_marginTop="@dimen/register_second_step_sp_service_type_top"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_publish_tag4"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_publish_tag4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="left|center"
+                    android:hint="标签"
+                    android:minHeight="40dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="#ff000000"
+                    android:textColorHint="#888888"
+                    android:textSize="@dimen/register_second_step_tv_info_textsize" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/bt_publish_tag4_show"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/xiasanjiao" />
+
+                <ImageButton
+                    android:id="@+id/img_publish_tag4"
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:color/transparent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_service_area"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:textColorHint="#888888"
+                android:textSize="@dimen/register_second_step_tv_info_textsize" >
+
+                <TextView
+                    android:id="@+id/tv_publish_tag5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="left|center"
+                    android:hint="标签"
+                    android:minHeight="40dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="#ff000000"
+                    android:textColorHint="#888888"
+                    android:textSize="@dimen/register_second_step_tv_info_textsize" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/bt_publish_tag5"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/xiasanjiao" />
+
+                <ImageButton
+                    android:id="@+id/img_publish_tag5"
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:color/transparent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_publish_tag6"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_publish_tag6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="left|center"
+                    android:hint="标签"
+                    android:minHeight="40dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="#ff000000"
+                    android:textColorHint="#888888"
+                    android:textSize="@dimen/register_second_step_tv_info_textsize" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/bt_publish_tag6_show"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/xiasanjiao" />
+
+                <ImageButton
+                    android:id="@+id/img_publish_tag6"
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:color/transparent" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_upload_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/register_first_step_btn_nextstep_height"
+            android:layout_below="@+id/register_ll_next"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/register_first_step_btn_nextstep_margin_left"
+            android:layout_marginRight="@dimen/register_second_step_et_shop_name_left"
+            android:layout_marginTop="@dimen/register_first_step_btn_nextstep_margin_top"
+            android:background="@color/button_select"
+            android:text="点击上传服务图片"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/register_second_step_tv_info_textsize" >
+        </Button>
+        <TextView
+            android:id="@+id/tv_upload_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btn_upload_pic"
+            android:layout_marginLeft="@dimen/register_second_step_btn_upload1_left"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:padding="0dp"
+            android:text="!未选择"
+            android:textColor="#000000"
+            android:textSize="@dimen/register_second_step_tv_info_textsize" 
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/register_first_step_btn_nextstep_height"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btn_ret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="编辑店铺信息"
+            android:textColor="@color/black"
+            android:textSize="@dimen/register_first_step_tv_register_textsize" />
+
+        <Button
+            android:id="@+id/btn_store_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/transparent"
+            android:text="完成"
+            android:textColor="#ff0063"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/register_second_step_rl_margin_top"
+        android:background="@color/content_color" >
+
+        <Button
+            android:id="@+id/btn_register_step_img"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/big_tag_bg"
+            android:hint="点击上传店铺图片"
+            android:textColorHint="#888888" />
+
+        <EditText
+            android:id="@+id/et_shop_name"
+            android:layout_width="@dimen/register_first_step_et_username_width"
+            android:layout_height="@dimen/register_first_step_btn_nextstep_height"
+            android:layout_below="@+id/btn_register_step_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/register_second_step_et_shop_name_left"
+            android:layout_marginTop="@dimen/register_second_step_et_shop_name_top"
+            android:background="@color/white"
+            android:ellipsize="end"
+            android:hint="店铺名称"
+            android:maxLength="10"
+            android:paddingLeft="5dp"
+            android:textColorHint="#888888" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/et_shop_area"
+            android:layout_width="@dimen/register_first_step_et_username_width"
+            android:layout_height="@dimen/register_first_step_btn_nextstep_height"
+            android:layout_below="@+id/et_shop_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/register_second_step_et_shop_name_left"
+            android:layout_marginTop="@dimen/register_second_step_et_shop_name_top"
+            android:background="@color/white"
+            android:hint="所在地区"
+            android:paddingLeft="5dp"
+            android:textColorHint="#888888" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/et_shop_phone"
+            android:layout_width="@dimen/register_first_step_et_username_width"
+            android:layout_height="@dimen/register_first_step_btn_nextstep_height"
+            android:layout_below="@+id/et_shop_area"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/register_second_step_et_shop_name_left"
+            android:layout_marginTop="@dimen/register_second_step_et_shop_name_top"
+            android:background="@color/white"
+            android:hint="联系方式"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColorHint="#888888" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/et_shop_time"
+            android:layout_width="@dimen/register_first_step_et_username_width"
+            android:layout_height="@dimen/register_first_step_btn_nextstep_height"
+            android:layout_below="@+id/et_shop_phone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/register_second_step_et_shop_name_left"
+            android:layout_marginTop="@dimen/register_second_step_et_shop_name_top"
+            android:background="@color/white"
+            android:hint="营业时间,参考格式(09:00-11:00)"
+            android:paddingLeft="5dp"
+            android:textColorHint="#888888" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/et_shop_detail"
+            android:layout_width="@dimen/register_first_step_et_username_width"
+            android:layout_height="80dp"
+            android:layout_below="@+id/et_shop_time"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/register_second_step_et_shop_name_left"
+            android:layout_marginTop="@dimen/register_second_step_et_shop_name_top"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="详细介绍"
+            android:paddingLeft="5dp"
+            android:textColorHint="#888888" >
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_confim_register"
+            android:layout_width="@dimen/register_first_step_btn_nextstep_width"
+            android:layout_height="@dimen/register_first_step_btn_nextstep_height"
+            android:layout_below="@+id/et_shop_detail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/register_first_step_btn_nextstep_margin_left"
+            android:layout_marginTop="@dimen/register_first_step_btn_nextstep_margin_top"
+            android:background="@color/button_unselect"
+            android:text="上传更多店铺环境图片"
+            android:textColor="@color/white"
+            android:textSize="17sp" >
+        </Button>
+
+        <TextView
+            android:id="@+id/tv_upload1"
+            android:layout_width="@dimen/register_first_step_btn_nextstep_width"
+            android:layout_height="20dp"
+            android:layout_below="@+id/btn_confim_register"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/register_first_step_btn_nextstep_margin_left"
+            android:layout_marginTop="3dp"
+            android:background="@color/white"
+            android:padding="0dp"
+            android:text="!未上传"
+            android:textColor="#000000"
+            android:textSize="@dimen/register_second_step_tv_info_textsize" />
+    </RelativeLayout>
+
+</LinearLayout>

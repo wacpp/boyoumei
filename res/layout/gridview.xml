@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <!-- 
+ 	android:numColumns="auto_fit" ，GridView的列数设置为自动 
+	android:columnWidth="90dp"，每列的宽度，也就是Item的宽度
+ 	android:verticalSpacing="10dp"，两行之间的边距，如：行一(NO.0~NO.2)与行二(NO.3~NO.5)间距为10dp
+	android:horizontalSpacing="10dp"，两列之间的边距。
+ 	android:stretchMode="columnWidth"，缩放与列宽大小同步
+ 
+  -->
+
+<com.beautysalon.viewflipper.GridView xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/gridview"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:numColumns="3" 
+    android:descendantFocusability="afterDescendants"
+    android:columnWidth="100dp"
+    android:verticalSpacing="10dp"
+    android:horizontalSpacing="10dp"
+    android:stretchMode="columnWidth"
+/>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_contact_dialog"
+    android:layout_width="337dp"
+    android:layout_height="200dp"
+    android:background="@color/content_color"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="66dip"
+        android:layout_marginLeft="25dp"
+        android:background="@color/content_color"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="#33B5E5"
+        android:textSize="17dp" />
+
+    <View
+        android:id="@+id/qn_operate_dialog_title_unline"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@id/tip"
+        android:background="#33B5E5"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/qn_operate_dialog_title_unline"
+        android:background="@color/content_color"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/input_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="视讯号"
+                android:textColor="#a8adb1"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/input_name_et"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:background="@drawable/custom_text_bg"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="8"
+                android:singleLine="true"
+                android:textColor="#a8adb1"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/show_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="232dp"
+                android:layout_marginTop="10dp"
+                android:maxLines="1"
+                android:text="8位数字"
+                android:textColor="#a8adb1"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/qn_operate_dialog_button_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custom_dialog_bottom_bg_selector"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/two_button_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/dialog_button_cancel"
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/custom_dialog_bottom_bg_selector"
+                android:text=""
+                android:textColor="@color/qn_dialog_bottom_text_color"
+                android:textSize="17sp" >
+            </Button>
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@id/dialog_button_cancel"
+                android:background="#D5D5D5" />
+
+            <Button
+                android:id="@+id/dialog_button_ok"
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/custom_dialog_bottom_bg_selector"
+                android:text=""
+                android:textColor="@color/qn_dialog_bottom_text_color"
+                android:textSize="17sp" >
+            </Button>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/one_button_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/qn_operae_dialog_center_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/custom_dialog_bottom_bg_selector"
+                android:text=""
+                android:textColor="@color/qn_dialog_bottom_text_color"
+                android:textSize="17sp" >
+            </Button>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_above="@id/qn_operate_dialog_button_lay"
+        android:background="#D5D5D5" />
+
+</RelativeLayout>

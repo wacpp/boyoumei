@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity" 
+    android:background="@drawable/bottom_bg"
+    >
+
+   <com.example.gallery.DetailGallery 
+          android:id="@+id/detail_shotcut_gallery"
+          android:layout_width="fill_parent"
+          android:layout_height="200px"
+          android:gravity="center"
+          android:spacing="2px"
+       />
+</LinearLayout>
+	
